@@ -1,7 +1,10 @@
-#include "MessageHandler.hpp"
-#include "OrderMessageManager.hpp"
-#include "ProcessMessageManager.hpp"
-#include "SendMessageManager.hpp"
+#include "../include/MessageHandler.hpp"
+#include "../include/OrderMessageManager.hpp"
+#include "../include/ProcessMessageManager.hpp"
+#include "../include/SendMessageManager.hpp"
+#include <iostream>
+using std::cout;
+using std::endl;
 
 int main() {
   OrderMessageManager messageReciever;
