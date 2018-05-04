@@ -6,7 +6,7 @@
 class ProcessMessageManager : public MessageHandler {
 public:
   ProcessMessageManager();
-  void handler(int); // Virtual Function
+  void handler(string); // Virtual Function
 private:
 };
 

@@ -12,12 +12,11 @@ int main() {
   SendMessageManager sendingManager;
 
   messageReciever.add(&messageProcesser);
-  messageReciever.add(&messageReciever);
-  sendingManager.setNext(&sendingManager);
+  messageReciever.add(&sendingManager);
+  sendingManager.setNext(&messageReciever);
 
-  for(int i = 1; i < 10; ++i) {
-    messageReciever.handler(i);
-    cout << endl;
-  }
+  messageReciever.handler("Super-secret message");
+  messageReciever.handler("Message processed");
+  messageReciever.handler("Message ready");
   return 0;
 }

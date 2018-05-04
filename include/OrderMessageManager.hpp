@@ -6,7 +6,7 @@
 class OrderMessageManager : public MessageHandler {
 public:
   OrderMessageManager();
-  void handler(int); // Virtual Function
+  void handler(string); // Virtual Function
 private:
 };
 

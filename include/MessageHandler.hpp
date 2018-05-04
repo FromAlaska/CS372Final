@@ -6,13 +6,15 @@ using std::cout;
 using std::endl;
 #include <vector>
 #include <memory>
+#include <string>
+using std::string;
 
 class MessageHandler {
 public:
   MessageHandler();
   void setNext(MessageHandler *);
   void add(MessageHandler *);
-  virtual void handler(int i) {
+  virtual void handler(string i) {
     nextManager_->handler(i);
   }
 private:

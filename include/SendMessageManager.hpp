@@ -6,7 +6,7 @@
 class SendMessageManager : public MessageHandler {
 public:
   SendMessageManager();
-  void handler(int); // Virtual Function
+  void handler(string); // Virtual Function
 private:
 };
 

@@ -3,12 +3,13 @@
 SendMessageManager::SendMessageManager() {
 
 }
-void SendMessageManager::handler(int i) {
-  if (rand() % 3) {
-    cout << "Message received by sendingManager #" << i << ", ";
-    MessageHandler::handler(i);
+void SendMessageManager::handler(string message) {
+  if (message == "Message ready") {
+    cout << "sendingManager recieved: " << message << endl;;
+    // MessageHandler::handler(message);
   }
   else {
-    cout << "Message sent #" << i << " ";
+    MessageHandler::handler(message);
+    //cout << "SendMessageManager:" << message << endl;
   }
 }

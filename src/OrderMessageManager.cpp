@@ -3,12 +3,12 @@
 OrderMessageManager::OrderMessageManager() {
 
 }
-void OrderMessageManager::handler(int i) {
-  if (rand() % 3) {
-    cout << "Order has been received #" << i << ", ";
-    MessageHandler::handler(i);
+void OrderMessageManager::handler(string message) {
+  if (message == "Super-secret message") {
+    cout << "Order manager recieved: " << message << endl;
   }
   else {
-    cout << "Message sent #" << i << " ";
+    MessageHandler::handler(message);
+    //cout << "OrderMessageManager: "<< message << endl;
   }
 }

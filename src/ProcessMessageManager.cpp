@@ -3,12 +3,13 @@
 ProcessMessageManager::ProcessMessageManager() {
 
 }
-void ProcessMessageManager::handler(int i) {
-  if (rand() % 3) {
-    cout << "Message Processed #" << i << ", ";
-    MessageHandler::handler(i);
+void ProcessMessageManager::handler(string message) {
+  if (message == "Message processed") {
+    cout << "Processor managed: " << message << endl;
+    // MessageHandler::handler(message);
   }
   else {
-    cout << "Message sent #" << i << " ";
+    MessageHandler::handler(message);
+    //cout << "ProcessMessageManager: " << message << endl;
   }
 }
