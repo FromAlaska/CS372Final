@@ -7,7 +7,7 @@ using std::cout;
 using std::endl;
 
 int main() {
-  OrderMessageManager messageReciever;
+  OrderMessageManager messageReciever; // This object handles the messages
   ProcessMessageManager messageProcesser;
   SendMessageManager sendingManager;
 
