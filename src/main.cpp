@@ -6,9 +6,6 @@
 #include "../include/OrderMessageManager.hpp"
 #include "../include/ProcessMessageManager.hpp"
 #include "../include/SendMessageManager.hpp"
-#include <iostream>
-using std::cout;
-using std::endl;
 
 int main() {
   // Extended classes
@@ -23,7 +20,13 @@ int main() {
 
   // Message passing
   messageReciever.handler("Super-secret message");
+  messageReciever.handler("Another cool message");
   messageReciever.handler("Message processed");
   messageReciever.handler("Message ready");
+
+  // Print messages
+  messageReciever.printMessages();
+  messageProcesser.printMessages();
+  sendingManager.printMessages();
   return 0;
 }

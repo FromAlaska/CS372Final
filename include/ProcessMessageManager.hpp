@@ -11,7 +11,12 @@ class ProcessMessageManager : public MessageHandler {
 public:
   ProcessMessageManager();
   void handler(string); // Virtual Function
+  bool checkMessage(string&);
+  void addToMessages(string&);
+  void printMessages();
 private:
+  vector<string> recentMessages_;
+  vector<string> whiteListedMessages_;
 };
 
 #endif /* ProcessMessageManager_HPP_INCLUDED */

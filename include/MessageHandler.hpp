@@ -9,6 +9,7 @@
 using std::cout;
 using std::endl;
 #include <vector>
+using std::vector;
 #include <memory>
 #include <string>
 using std::string;
@@ -21,6 +22,9 @@ public:
   virtual void handler(string i) {
     nextManager_->handler(i);
   }
+  virtual bool checkMessage(string&) {return true;}
+  virtual void addToMessages(string&) = 0;
+  virtual void printMessages() = 0;
 private:
   MessageHandler * nextManager_;
 };

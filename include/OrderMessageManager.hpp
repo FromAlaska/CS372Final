@@ -11,7 +11,12 @@ class OrderMessageManager : public MessageHandler {
 public:
   OrderMessageManager();
   void handler(string); // Virtual Function
+  bool checkMessage(string&);
+  void addToMessages(string&);
+  void printMessages();
 private:
+  vector<string> recentMessages_;
+  vector<string> whiteListedMessages_;
 };
 
 #endif /* OrderMessageManager_HPP_INCLUDED */

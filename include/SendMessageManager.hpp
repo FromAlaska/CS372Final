@@ -11,7 +11,12 @@ class SendMessageManager : public MessageHandler {
 public:
   SendMessageManager();
   void handler(string); // Virtual Function
+  bool checkMessage(string&);
+  void addToMessages(string&);
+  void printMessages();
 private:
+  vector<string> recentMessages_;
+  vector<string> whiteListedMessages_;
 };
 
 #endif /* SendMessageManager_HPP_INCLUDED */
