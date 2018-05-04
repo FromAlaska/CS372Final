@@ -9,6 +9,5 @@ void OrderMessageManager::handler(string message) {
   }
   else {
     MessageHandler::handler(message);
-    //cout << "OrderMessageManager: "<< message << endl;
   }
 }

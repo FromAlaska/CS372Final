@@ -18,7 +18,6 @@ public:
     nextManager_->handler(i);
   }
 private:
-  //std::unique_ptr<MessageHandler> nextManager_;
   MessageHandler * nextManager_;
 };
 

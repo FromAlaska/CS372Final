@@ -11,10 +11,12 @@ int main() {
   ProcessMessageManager messageProcesser;
   SendMessageManager sendingManager;
 
+  // Adding associates
   messageReciever.add(&messageProcesser);
   messageReciever.add(&sendingManager);
   sendingManager.setNext(&messageReciever);
 
+  // Message passing
   messageReciever.handler("Super-secret message");
   messageReciever.handler("Message processed");
   messageReciever.handler("Message ready");
