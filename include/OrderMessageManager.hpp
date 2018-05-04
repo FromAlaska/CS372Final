@@ -1,3 +1,7 @@
+// Jim Samson
+// CS372 Final
+// This is the Order Messager handling classes
+
 #ifndef OrderMessageManager_HPP_INCLUDED
 #define OrderMessageManager_HPP_INCLUDED
 

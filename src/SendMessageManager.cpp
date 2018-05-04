@@ -1,3 +1,7 @@
+// Jim Samson
+// CS372 Final
+// This is the Message Handler Class
+
 #include "../include/SendMessageManager.hpp"
 
 SendMessageManager::SendMessageManager() {

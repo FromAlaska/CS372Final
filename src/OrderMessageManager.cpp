@@ -1,3 +1,7 @@
+// Jim Samson
+// CS372 Final
+// Order MessageHandler for orders
+
 #include "../include/OrderMessageManager.hpp"
 
 OrderMessageManager::OrderMessageManager() {

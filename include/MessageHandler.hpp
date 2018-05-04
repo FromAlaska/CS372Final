@@ -1,6 +1,7 @@
 // Jim Samson
-// CS372 Final Test
+// CS372 Final
 // This is the base class handler for messages
+
 #ifndef MessageHandler_HPP_INCLUDED
 #define MessageHandler_HPP_INCLUDED
 

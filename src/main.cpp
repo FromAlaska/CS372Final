@@ -1,3 +1,7 @@
+// Jim Samson
+// CS372 Final
+// Main class for testing/writing code
+
 #include "../include/MessageHandler.hpp"
 #include "../include/OrderMessageManager.hpp"
 #include "../include/ProcessMessageManager.hpp"

@@ -1,3 +1,7 @@
+// Jim Samson
+// CS372 Final
+// This is the Sending Message Handler class
+
 #ifndef SendMessageManager_HPP_INCLUDED
 #define SendMessageManager_HPP_INCLUDED
 

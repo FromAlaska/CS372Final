@@ -1,3 +1,7 @@
+// Jim Samson
+// CS372 Final
+// Message Handler Base Class Functions
+
 #include "../include/MessageHandler.hpp"
 
 MessageHandler::MessageHandler() {

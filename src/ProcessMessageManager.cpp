@@ -1,3 +1,6 @@
+// Jim Samson
+// CS372 Final
+// This is the Process Messanger Class
 #include "../include/ProcessMessageManager.hpp"
 
 ProcessMessageManager::ProcessMessageManager() {
