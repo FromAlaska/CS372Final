@@ -12,8 +12,8 @@ int main() {
   SendMessageManager sendingManager;
 
   messageReciever.add(&messageProcesser);
-  messageReciever.add(&sendingManager);
-  sendingManager.setNext(&messageReciever);
+  messageReciever.add(&messageReciever);
+  sendingManager.setNext(&sendingManager);
 
   for(int i = 1; i < 10; ++i) {
     messageReciever.handler(i);

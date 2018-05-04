@@ -2,6 +2,8 @@
 #define MessageHandler_HPP_INCLUDED
 
 #include <iostream>
+using std::cout;
+using std::endl;
 #include <vector>
 #include <memory>
 
